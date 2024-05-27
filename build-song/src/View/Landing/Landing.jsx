@@ -27,7 +27,7 @@ export default function Landing() {
         </div>
       </div>
       <div className='prueba'>
-        Hola
+        
       </div>
     </div>
     
