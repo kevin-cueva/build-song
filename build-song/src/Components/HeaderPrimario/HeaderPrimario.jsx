@@ -1,57 +1,63 @@
-
 import './HeaderPrimario.css';
-import { useEffect } from 'react';
-import { useState } from 'react';
-
-
+import { useEffect, useState, useRef } from 'react';
+import Navbar from '../Navbar/Navbar';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 function HeaderPrimario() {
-    const usePracticas = useState(0);
-useEffect(()=>{
-    let liElement1 = document.getElementById('header-practicas')
-    let liElement2 = document.getElementById('header-comunidad')
-    const handleMouseEnter = (id) => {
-        return ()=> {
-            console.log(`El mouse está sobre el elemento ${id}`);
+    const [touchNav, setTouchNav] = useState(false);
+    const [listaNav, setListaNav] = useState([]);
+
+    // Crear las listas completas
+    const practicas = [
+        "D&DP",
+        "Commerce",
+        "Marketing"
+    ];
+
+    const comunidad = [
+        "Advisory",
+        "Technology",
+        "Next",
+        "Create",
+        "Ecosystem"
+    ];
+
+    // Crear una lista principal que contiene las dos listas anteriores
+    const listas = [
+        { titulo: "Practicas", items: practicas },
+        { titulo: "Comunidad", items: comunidad }
+    ];
+
+    const handleMouseClick = (items) => {
+        return () => {
+            console.log("Click")
+            setListaNav(items);
+            setTouchNav(prevTouchNav => !prevTouchNav); // Alternar el estado de touchNav
         };
     };
 
-    const handleMouseLeave = (id) => {
-        return ()=> {
-        console.log(`El mouse ha salido del elemento ${id})`);
-        };
-    };
-
-    if (liElement1) {
-        liElement1.addEventListener('mouseenter', handleMouseEnter(liElement1));
-        liElement1.addEventListener('mouseleave', handleMouseLeave(liElement1));
-    }
-    if(liElement2){
-        liElement2.addEventListener('mouseenter', handleMouseEnter(liElement2));
-        liElement2.addEventListener('mouseleave', handleMouseLeave(liElement2));
-    }
-},[usePracticas]);
-    return(
-        <div>
-<header className="header">
-      <div className="header-content">
-       <div className='accenture-song'>
-         <strong>Accenture</strong> Song
-       </div>
-       <div className='div-nav'>
-        <nav>
-        <ul>
-          <li ><a href="#home" className="home-color">Home</a></li>
-          <li><a href="#practicas" id='header-practicas'>Practicas</a></li>
-          <li><a href="#comunidad" id='header-comunidad'>Comunidad</a></li>
-        </ul>
-        </nav>
-       </div>
-      </div>
-        </header>
+    return (
+        <div className='headerPrimario-contenedor'>
+            <header className="header">
+                <div className="header-content">
+                    <div className='accenture-song'>
+                        <strong>Accenture</strong> Song
+                    </div>
+                    <div className='div-nav'>
+                        <nav>
+                            <ul>
+                                <li><a href="#home" className="home-color">Home</a></li>
+                                <li onClick={handleMouseClick(listas[0].items)}><a href="#practicas" id='header-practicas'>Practicas <FontAwesomeIcon icon={faChevronDown} /></a></li>
+                                <li onClick={handleMouseClick(listas[1].items)}><a href="#comunidad" id='header-comunidad'>Comunidad <FontAwesomeIcon icon={faChevronDown} /></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            {touchNav && <Navbar items={listaNav} />}
         </div>
     );
-    
 }
 
 export default HeaderPrimario;

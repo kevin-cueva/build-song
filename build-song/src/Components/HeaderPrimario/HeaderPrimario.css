@@ -1,6 +1,8 @@
+.headerPrimario-contenedor{
+  height: 100px;
+}
 /*Header*/
 .header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
