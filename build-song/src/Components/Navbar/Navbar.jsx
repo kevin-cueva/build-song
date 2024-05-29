@@ -11,7 +11,7 @@ function Navbar({ items }) {
                     <nav className="navbar-conteiner">
                         <ul className='prueba'>
                             {items.map((item, index) => (
-                                <li key={index}><a>{item}</a></li>
+                                <li key={index}><a href={`#${item}`}>{item}</a></li>
                             ))}
                         </ul>
                     </nav>
