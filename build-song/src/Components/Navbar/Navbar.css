@@ -1,0 +1,19 @@
+.navbar-conteiner{
+    width: 100%;
+    height: auto;
+    background-color: rgb(50, 26, 156);
+    margin: 0;
+    padding: 5px 0 5px 0;
+    
+}
+.prueba li a{
+    color: white;
+    text-decoration: none;
+    flex-direction: row;
+    padding: 0; /* Elimina el relleno predeterminado */
+    margin: 0;
+}
+.prueba li {
+    display: inline; /* Coloca los elementos en línea */
+    margin-right: 30px; /* Espacio entre los elementos */
+}

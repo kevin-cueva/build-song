@@ -1,0 +1,61 @@
+.headerPrimario-contenedor{
+  height: 100px;
+}
+/*Header*/
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1); /* Fondo negro */
+    color: white;
+    padding-top: 15px;
+    border-bottom: 2px solid rgb(146, 49, 246); /* Agrega un borde inferior de 2px de color morado */
+  }
+  .header-content {
+    display: flex; /* Utiliza flexbox para el contenedor */
+    justify-content: space-between; /* Coloca los elementos en los extremos */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    width: 100%; /* Hace que el contenedor ocupe todo el ancho disponible */
+    padding: 0 0 15px 0; /* Espacio interior del contenedor */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del contenedor */
+  }
+  .header-content div nav{
+    
+  }
+  .header-content div nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0 0 0 0; /* Elimina el padding predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    
+}
+
+.header-content div nav ul li{
+    display: inline; /* Coloca los elementos en línea */
+    margin-right: 30px; /* Espacio entre los elementos */
+    
+}
+  .header-content div nav ul li a {
+    color: white;
+    text-decoration: none;
+    flex-direction: row;
+    padding: 0; /* Elimina el relleno predeterminado */
+    margin: 0;
+  }
+  .header-content div nav ul li .home-color {
+    color: blueviolet;
+    font-weight: bold;
+  }
+.header-content div nav ul li a:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón sobre el enlace */
+}
+  
+.accenture-song{
+ padding-left: 70px;
+}
+.div-nav{
+  padding-right: 70px;
+}
+/*
+FIN del Header
+////////////////////*/
