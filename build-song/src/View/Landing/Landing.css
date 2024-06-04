@@ -60,6 +60,7 @@ p{
 }
 .first-text{
  font-size: 20px;
+ margin-bottom: 0;
 }
 .big-build{
   font-family:Arial, Helvetica, sans-serif;
@@ -69,7 +70,7 @@ p{
     -webkit-text-stroke: 4px rgb(146, 49, 246); /* Añade un borde negro de 2px al texto */
   padding: 0;
   margin: 0;
-  line-height: 1; /* Elimina el espaciado entre líneas */
+  line-height: 0.8; /* Elimina el espaciado entre líneas */
 }
 .content-build div .experiences {
   width: 100%;

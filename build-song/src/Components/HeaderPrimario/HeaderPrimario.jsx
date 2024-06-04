@@ -59,14 +59,14 @@ function HeaderPrimario() {
                         <nav>
                             <ul>
                                 <li><a href="#home" className="home-color">Home</a></li>
-                                <li onClick={handleMouseClick(listas[0].items)}><a href="#practicas" id='header-practicas'>Practicas{" "}
+                                <li onClick={handleMouseClick(listas[0].items)}><a href="#practicas" id='header-practicas'>Practicas{""}
                                 {JSON.stringify(listaNav) == JSON.stringify(listas[0].items) && touchNav ?
-                                     <FontAwesomeIcon icon={faChevronUp} /> : 
-                                     <FontAwesomeIcon icon={faChevronDown} />}</a></li>
-                                <li onClick={handleMouseClick(listas[1].items)}><a href="#comunidad" id='header-comunidad'>Comunidad{" "}  
+                                     <FontAwesomeIcon className='headerPrimario-icon-checvroun' icon={faChevronUp} /> : 
+                                     <FontAwesomeIcon className='headerPrimario-icon-checvroun' icon={faChevronDown} />}</a></li>
+                                <li onClick={handleMouseClick(listas[1].items)}><a href="#comunidad" id='header-comunidad'>Comunidad{""}  
                                      {JSON.stringify(listaNav) == JSON.stringify(listas[1].items) && touchNav ?
-                                     <FontAwesomeIcon icon={faChevronUp} /> : 
-                                     <FontAwesomeIcon icon={faChevronDown} />}</a></li>
+                                     <FontAwesomeIcon className='headerPrimario-icon-checvroun' icon={faChevronUp} /> : 
+                                     <FontAwesomeIcon className='headerPrimario-icon-checvroun' icon={faChevronDown} />}</a></li>
                             </ul>
                         </nav>
                     </div>
