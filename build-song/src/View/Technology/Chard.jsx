@@ -35,58 +35,6 @@ export default function Chard() {
                   </div>
                   </div>
                 ))}
-                <div className='technologyHome-card'>
-                    <div className='technologyHome-card-imagen'>
-                        <img src="https://assets.codepen.io/1480814/adam-argyle.png" alt="Adam argyle" />
-                    </div>
-                    <div className='technologyHome-card-text'>
-                        <div className='technologyHome-card-text-name'>Kevin N. Cueva A</div>
-                        <div className='technologyHome-card-text-work'>Aplication Dev. Asociate</div>
-                    </div>
-                </div>
-
-                <div className='technologyHome-card-gray'>
-                <div className='technologyHome-card'>
-                    <div className='technologyHome-card-imagen'>
-                        <img src="https://assets.codepen.io/1480814/adam-argyle.png" alt="Adam argyle" />
-                    </div>
-                    <div className='technologyHome-card-text'>
-                        <div className='technologyHome-card-text-name'>Kevin N. Cueva A</div>
-                        <div className='technologyHome-card-text-work'>Aplication Dev. Asociate</div>
-                    </div>
-                </div>
-                </div>
-
-
-                <div className='technologyHome-card'>
-                    <div className='technologyHome-card-imagen'>
-                        <img src="https://assets.codepen.io/1480814/adam-argyle.png" alt="Adam argyle" />
-                    </div>
-                    <div className='technologyHome-card-text'>
-                        <div>Kevin N. Cueva A</div>
-                        <div>Developer App</div>
-                    </div>
-                </div>
-
-                <div className='technologyHome-card'>
-                    <div className='technologyHome-card-imagen'>
-                        <img src="https://assets.codepen.io/1480814/adam-argyle.png" alt="Adam argyle" />
-                    </div>
-                    <div className='technologyHome-card-text'>
-                        <div>Kevin Neill Cueva </div>
-                        <div>Developer App</div>
-                    </div>
-                </div>
-
-                <div className='technologyHome-card'>
-                    <div className='technologyHome-card-imagen'>
-                        <img src="https://assets.codepen.io/1480814/adam-argyle.png" alt="Adam argyle" />
-                    </div>
-                    <div className='technologyHome-card-text'>
-                        <div>Kevin N. Cueva A</div>
-                        <div>Developer App</div>
-                    </div>
-                </div>
             </div>
         </div>
     );
