@@ -1,0 +1,78 @@
+.technologyHome-conteiner-team-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   }
+   .technologyHome-conteiner-team-card .grip{
+     width: 70%;
+     display: grid;
+     align-items: center;
+     justify-content: center;
+     grid-template-columns: auto auto auto auto;
+     grid-template-rows: auto;
+     gap: 20px 20px;
+    
+   }
+   .technologyHome-card-gray{
+    background-color: white;
+    opacity: 0.5;
+    transition: .5s;
+   }
+   .technologyHome-card-gray:hover{
+    opacity: 1;
+    transition: .5s;
+   }
+   .technologyHome-card{
+     justify-content: center;
+     width: 200px;
+     height: auto;
+   }
+   .technologyHome-card-imagen{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   .technologyHome-card-imagen img {
+     --s: 100px; /* image size */
+     --b: 3px; /* border thickness */
+     --c: #ae3ec9; /* border color */
+     --cb: #e9ecef; /* background color */
+     --f: 1; /* initial scale */
+     
+     width: var(--s);
+     aspect-ratio: 1;
+     padding-top: calc(var(--s)/5);
+     cursor: pointer;
+     border-radius: 0 0 999px 999px;
+     --_g: 50%/calc(100%/var(--f)) 100% no-repeat content-box;
+     --_o: calc((1/var(--f) - 1)*var(--s)/2 - var(--b));
+     outline: var(--b) solid var(--c);
+     outline-offset: var(--_o);
+     background: 
+       radial-gradient(
+         circle closest-side,
+         var(--cb) calc(99% - var(--b)),var(--c) calc(100% - var(--b)) 99%,#0000
+        ) var(--_g);
+     -webkit-mask:
+       linear-gradient(#000 0 0) no-repeat
+        50% calc(1px - var(--_o)) / calc(100%/var(--f) - 2*var(--b) - 2px) 50%,
+       radial-gradient(circle closest-side,#000 99%,#0000) var(--_g);
+     transform: scale(var(--f));
+     transition: .5s;
+     filter: grayscale(100%);
+   }
+   img:hover {
+     --f: 1.4; /* hover scale */
+     filter: grayscale(0%);
+   }
+   .technologyHome-card-text{
+     padding: 15px 0 10px 10px;
+   }
+   .technologyHome-card-text-name{
+     font-size: larger;
+     font-weight: bold;
+   }
+   .technologyHome-card-text-work{
+     font-size: small;
+     color: gray;
+   }
